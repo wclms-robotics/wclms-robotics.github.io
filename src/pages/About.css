@@ -1,32 +1,73 @@
 .About {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Bricolage Grotesque', sans-serif;
   color: #333;
 }
 
 /* Header */
 .about-header {
-  background: url("../media/aboutbg.jpg");
+  position: relative;
+  width: 100%;
+  min-height: 40vh;
+  overflow: hidden; /* contain pseudo-elements */
+  /* fallback color while image loads */
+  background-color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
   color: white;
-  text-align: center;
-  padding: 3rem 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* subtle dark overlay to improve text contrast on bright images */
+.about-header::before {
+  /* the background image moved to ::before so we can apply filters and control focal point */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../media/aboutbg.jpg");
+  background-size: cover;
+  /* move focal point downwards (60% down) */
+  background-position: center 60%;
+  background-repeat: no-repeat;
+  /* slightly darker than before */
+  filter: brightness(0.96) saturate(1.04);
+  z-index: 0;
+}
+
+.about-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* slightly darker overlay to reduce brightness a bit */
+  background: rgba(0,0,0,0.28);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ensure header content sits above the image and overlay */
+.about-header > * {
+  position: relative;
+  z-index: 2;
 }
 
 .about-title {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 800;
   margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.45);
 }
 
 .about-subtitle {
-  font-size: 1.1rem;
-  opacity: 0.9;
+  font-size: 1.125rem;
+  opacity: 0.95;
+  font-weight: 600;
 }
 
-/* Layout */
 .about-main {
-  display: flex;
-  justify-content: center;
+  /* ensure the main stacks vertically and lets Tailwind utilities center content */
+  display: block;
 }
 
 .about-grid {
@@ -58,7 +99,7 @@
 }
 
 .about-heading {
-  color: #1e3a8a;
+  color: #383838;
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.75rem;

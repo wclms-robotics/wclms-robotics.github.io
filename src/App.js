@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import About from './pages/About'; 
+import RobotDesign from './pages/RobotDesign'
 function App() {
   // Helper to load images from /src/media for both Vite and Webpack dev setups
   const loadImages = () => {
@@ -94,8 +95,8 @@ function App() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white rounded-lg shadow p-6">
-            <h2 className="text-xl font-semibold mb-2">Column 1</h2>
-            <p className="text-gray-600">Placeholder text for the first column.</p>
+            <h2 className="text-xl font-semibold mb-2">Robot Design</h2>
+            <p className="text-gray-600">Click <Link to="/robot-design" className="text-blue-600 hover:underline">here</Link> to explore our robot design and strategy.</p>
           </div>
 
           <div className="bg-white rounded-lg shadow p-6">
@@ -126,6 +127,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
+        <Route path="/robot-design" element={<RobotDesign />} />
       </Routes>
     </div>
   );
