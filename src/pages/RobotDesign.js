@@ -7,7 +7,7 @@ function RobotDesign() {
     <div className="RobotDesign bg-gray-50 min-h-screen">
       <header className="robot-design-header">
         <h1 className="robot-design-title">Robot Design & Strategy</h1>
-        <p className="robot-design-subtitle">Engineering Excellence in Motion</p>
+        <p className="robot-design-subtitle">Designing, Coding, and Innovating</p>
       </header>
 
       <main className="robot-design-main container mx-auto px-4 py-8">
