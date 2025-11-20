@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import About from './pages/About'; 
 import RobotDesign from './pages/RobotDesign'
@@ -116,7 +116,7 @@ function App() {
   );
 
   return (
-    <div>
+    <HashRouter>
       <nav className="bg-gray-800 text-white py-4">
         <div className="container mx-auto px-4 flex gap-6">
           <Link to="/" className="hover:text-gray-300">Home</Link>
@@ -129,7 +129,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/robot-design" element={<RobotDesign />} />
       </Routes>
-    </div>
+    </HashRouter>
   );
 }
 
