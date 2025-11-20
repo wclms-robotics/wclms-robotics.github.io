@@ -64,6 +64,14 @@ function About() {
     'levi.jpeg': {
       title: 'Levi — Special',
       paragraph: 'Levi is everything organized: he created the team group chat, the team linktree, the team\'s website qr code, and the team log.'
+    },
+    'omar.jpeg': {
+      title: 'Omar — Senior',
+      paragraph: 'Omar is a important member of our robotics community, that has helped us achieve many of our successes, such as managing the ship mission and debugging code.'
+    },
+    'ryand.jpeg': {
+      title: 'Ryan D — Junior',
+      paragraph: 'Ryan is a big team player, and has triple lineage at WCMS, making him experienced, even at the first year.'
     }
   };
 

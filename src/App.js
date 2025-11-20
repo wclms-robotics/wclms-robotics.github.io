@@ -96,7 +96,7 @@ function App() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white rounded-lg shadow p-6">
             <h2 className="text-xl font-semibold mb-2">Robot Design</h2>
-            <p className="text-gray-600">Click <Link to="/robot-design" className="text-blue-600 hover:underline">here</Link> to explore our robot design and strategy.</p>
+            <p className="text-gray-600">Click <Link to="/robot-design" className="text-blue-600 hover:underline">here</Link> to explore our robot design and strategy!</p>
           </div>
 
           <div className="bg-white rounded-lg shadow p-6">

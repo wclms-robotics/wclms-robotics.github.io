@@ -133,3 +133,41 @@
     opacity: 1;
   }
 }
+
+/* Prevent grid children from forcing overflow and ensure images scale */
+.RobotDesign *,
+.RobotDesign *::before,
+.RobotDesign *::after {
+  box-sizing: border-box;
+}
+
+.robot-design-main {
+  overflow-x: hidden;
+}
+
+.robot-design-main .grid > * {
+  /* allow children to shrink below content size to avoid overflow */
+  min-width: 0;
+}
+
+.robot-design-main img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Ensure flex children (image + paragraph) can shrink and wrap inside cards */
+.robot-design-main .flex > * {
+  min-width: 0;
+}
+
+/* Limit very tall images so they don't push out of their cards */
+.robot-design-main img.object-cover {
+  max-height: 480px;
+}
+
+/* Ensure large card spanning multiple columns respects container width */
+.robot-design-main .md\:col-span-2 {
+  min-width: 0;
+}
