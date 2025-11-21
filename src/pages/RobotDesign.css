@@ -134,7 +134,7 @@
   }
 }
 
-/* Prevent grid children from forcing overflow and ensure images scale */
+/* Prevent grid children from forcing overflow */
 .RobotDesign *,
 .RobotDesign *::before,
 .RobotDesign *::after {
@@ -146,7 +146,6 @@
 }
 
 .robot-design-main .grid > * {
-  /* allow children to shrink below content size to avoid overflow */
   min-width: 0;
 }
 
@@ -154,18 +153,53 @@
   display: block;
   max-width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
 }
 
-/* Ensure flex children (image + paragraph) can shrink and wrap inside cards */
+/* Ensure flex children can shrink */
 .robot-design-main .flex > * {
   min-width: 0;
 }
 
-/* Limit very tall images so they don't push out of their cards */
-.robot-design-main img.object-cover {
+/* Tall image control */
+.robot-design-main img.object-contain {
   max-height: 480px;
 }
+
+/* Smaller images */
+.robot-design-main img.small-image {
+  max-width: 280px;
+  width: auto;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Programming image */
+.robot-design-main img.programming-image {
+  width: 100%;
+  height: auto;
+  max-height: 680px;
+  display: block;
+}
+
+/* EQUAL HEIGHT COLUMNS */
+.equal-col {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.robot-design-main .grid {
+  align-items: stretch;
+}
+
+.robot-design-main .equal-col > * {
+  flex-grow: 1;
+}
+
+/* Note: The old 1fr / 420px layout block HAS BEEN REMOVED */
 
 /* Ensure large card spanning multiple columns respects container width */
 .robot-design-main .md\:col-span-2 {

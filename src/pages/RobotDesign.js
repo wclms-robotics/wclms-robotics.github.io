@@ -2,79 +2,96 @@ import React from 'react';
 import './RobotDesign.css';
 import codeImg from '../media/code.png';
 import robotPartsImg from '../media/robotparts.png';
+import planningImg from '../media/planning.png'
 import spacersImg from '../media/spacers.png';
 
 function RobotDesign() {
-
   return (
     <div className="RobotDesign bg-gray-50 min-h-screen">
-      <header className="robot-design-header">
-        <h1 className="robot-design-title">Robot Design & Strategy</h1>
-        <p className="robot-design-subtitle">Note: This information is also on the trifold in front of you</p>
+      
+      <header className="robot-design-header px-4 py-8 text-center">
+        <h1 className="robot-design-title text-4xl font-bold mb-2">Robot Design & Strategy</h1>
+        <p className="robot-design-subtitle text-white-600">
+          Note: This information is also on the trifold in front of you
+        </p>
       </header>
 
-      <main className="robot-design-main container mx-auto px-4 py-8">
+      <main className="robot-design-main px-4 py-8">
+
+        {/* TOP SECTION */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-4">Our Design</h2>
-          <p className="text-gray-700 max-w-3xl">
-            Our team designed a compact robot with multiple attachments. Our robot navigates on two 3.5" diameter motor-driven back wheels and a rollerball acting as a front wheel. We build extra pieces as spacers to help us set up for missions.
-          </p>
+          <div className="max-w-3xl mx-auto bg-white rounded-lg shadow p-6 text-center">
+            <h2 className="text-2xl font-bold mb-4">Our Design</h2>
+            <p className="text-gray-700">
+              Our team designed a compact robot with multiple attachments. Our robot navigates on two 3.5" diameter motor-driven back wheels and a rollerball acting as a front wheel. We build extra pieces as spacers to help us set up for missions.
+            </p>
+          </div>
         </section>
+        <br></br>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white rounded-lg shadow p-6 md:col-span-2">
+        {/* GRID — 3 EQUAL COLUMNS */}
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          {/* COL 1 — Planning */}
+          <div className="bg-white rounded-lg shadow p-6 text-center">
             <h2 className="text-xl font-semibold mb-4">Planning</h2>
-              <img
-                src={robotPartsImg}
-                alt="Robot planning and strategy"
-                className="w-full h-80 object-cover rounded-lg mb-4"
-              />
+            <br></br>
+            <img
+              src={planningImg}
+              alt="Robot planning and strategy"
+              className="w-full h-auto object-contain rounded-lg mb-4 mx-auto"
+            />
+            <br></br>
             <p className="text-gray-600">
-              Strategic motor placement and gear ratios enable precise control and maximum torque output. We test multiple motor configurations to optimize speed and power balance. Our drive train supports both autonomous and manual operation modes for competitive flexibility.
+              We used a document with all the missions listed out, how hard they were, and how many points they were worth to strategize which missions were worth doing first, and which ones we could skip or work on later.
             </p>
           </div>
-
-          <div className="bg-white rounded-lg shadow p-6">
-            <h2 className="text-xl font-semibold mb-2">Programming</h2>
+          {/* COL 2 — Programming */}
+          <div className="bg-white rounded-lg shadow p-6 text-center">
+            <h2 className="text-xl font-semibold mb-4">Programming</h2>
+            <br></br><br></br>
             <p className="text-gray-600 mb-4">
-              Our team used Spike Coding, a web based system made by lego.
+              Our team used Spike Coding, a web-based system made by LEGO.
             </p>
+            <br></br>
+            <img
+              src={codeImg}
+              alt="Spike Coding interface"
+              className="w-full h-auto object-contain rounded-lg mb-4 mx-auto"
+            />
+            <br></br>
+            <p className="text-gray-600">
+              We used this program to create codes that controlled our robot's movements.
+            </p>
+          </div>
 
-            <div className="flex flex-col md:flex-row items-start gap-4">
-              <img
-                src={codeImg}
-                alt="A picture of the tool we used"
-                className="w-full md:w-40 h-32 md:h-32 object-cover rounded-lg"
-              />
-              <br></br><br></br>
-
+          {/* COL 3 — Additional Pieces */}
+          <div className="bg-white rounded-lg shadow p-6 text-center">
+            <h3 className="text-lg font-semibold mb-4">Additional Pieces</h3>
+            <div className="grid grid-cols-1 gap-4">
+              <div className="flex flex-col items-center text-center">
+                <img
+                  src={robotPartsImg}
+                  alt="Attachments for the Robot"
+                  className="h-auto object-contain rounded-lg mb-2 mx-auto"
+                />
+                <p className="text-gray-600 text-sm">Attachments for the Robot</p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <img
+                  src={spacersImg}
+                  alt="Spacers to Assist in Setup"
+                  className="h-auto object-contain rounded-lg mb-2 mx-auto"
+                />
+                <p className="text-gray-600 text-sm">Spacers to Assist in Setup</p>
+              </div>
+            </div>
+            <br></br>
               <p className="text-gray-600">
-                We used this program to create codes that controlled our robots' movements.
+              We used these pieces interchangeably for our robot to achieve different tasks. After certain missions are complete with one additional piece attached, we can send the robot back to the handling area, change the attachments, and have it go for a different task.
               </p>
-            </div>
           </div>
-        </div>
 
-        <section className="mt-12 bg-white rounded-lg shadow p-6">
-          <h2 className="text-xl font-semibold mb-6">Additional Pieces</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="flex flex-col items-center">
-              <img
-                src={robotPartsImg}
-                alt="Attachments for the Robot"
-                className="w-full h-64 object-cover rounded-lg mb-3"
-              />
-              <p className="text-gray-600 text-center text-sm">Attachments for the Robot</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <img
-                src={spacersImg}
-                alt="Spacers to Assist in Setup"
-                className="w-full h-64 object-cover rounded-lg mb-3"
-              />
-              <p className="text-gray-600 text-center text-sm">Spacers to Assist in Setup</p>
-            </div>
-          </div>
         </section>
       </main>
     </div>

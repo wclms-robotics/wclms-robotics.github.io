@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.83e72169.css",
-    "main.js": "/static/js/main.b0f09275.js",
-    "static/js/453.f107213d.chunk.js": "/static/js/453.f107213d.chunk.js",
+    "main.css": "/static/css/main.b1f4f297.css",
+    "main.js": "/static/js/main.c0c6af29.js",
+    "static/js/453.400c5b0c.chunk.js": "/static/js/453.400c5b0c.chunk.js",
     "static/media/IMG_4060.png": "/static/media/IMG_4060.b846e136a50e640c06ac.png",
     "static/media/IMG_4058.png": "/static/media/IMG_4058.aa8d0e6b52e09b4dc715.png",
     "static/media/IMG_4053.png": "/static/media/IMG_4053.f4035e425c0b9566ffa2.png",
@@ -17,6 +17,7 @@
     "static/media/IMG_4063.png": "/static/media/IMG_4063.d7d73ca190e600b2990b.png",
     "static/media/IMG_4045.png": "/static/media/IMG_4045.bbd891ca460ea55646dd.png",
     "static/media/IMG_4046.png": "/static/media/IMG_4046.ee13c20ca497d29b29cc.png",
+    "static/media/giulia.png": "/static/media/giulia.4c068c8bfb7bd7474627.png",
     "static/media/eli.jpeg": "/static/media/eli.37ba0aa5da941cf03514.jpeg",
     "static/media/william.jpeg": "/static/media/william.0067a3dfa8871a32ca78.jpeg",
     "static/media/alice.jpeg": "/static/media/alice.b127b41e363c4f05dcc7.jpeg",
@@ -34,14 +35,20 @@
     "static/media/IMG_1537.jpeg": "/static/media/IMG_1537.5d8d506f084932bd84bb.jpeg",
     "static/media/IMG_1775.jpeg": "/static/media/IMG_1775.efc1d0124b405b6f0f2b.jpeg",
     "static/media/aboutbg.jpg": "/static/media/aboutbg.089c51d2fabb37e68bc4.jpg",
+    "static/media/innovationbg.jpg": "/static/media/innovationbg.1efadbb346082f28e6cf.jpg",
+    "static/media/code.png": "/static/media/code.7a461b58c1fc51a2e44c.png",
     "static/media/homebanner.jpg": "/static/media/homebanner.bf3cb7edcfa5bde3c549.jpg",
+    "static/media/innovationproject.png": "/static/media/innovationproject.01195ed524004652b726.png",
+    "static/media/spacers.png": "/static/media/spacers.d8b8cb3214530deb0718.png",
+    "static/media/planning.png": "/static/media/planning.a3f151a0337b2c6c9d10.png",
+    "static/media/robotparts.png": "/static/media/robotparts.312a370e69ffbbbe9406.png",
     "index.html": "/index.html",
-    "main.83e72169.css.map": "/static/css/main.83e72169.css.map",
-    "main.b0f09275.js.map": "/static/js/main.b0f09275.js.map",
-    "453.f107213d.chunk.js.map": "/static/js/453.f107213d.chunk.js.map"
+    "main.b1f4f297.css.map": "/static/css/main.b1f4f297.css.map",
+    "main.c0c6af29.js.map": "/static/js/main.c0c6af29.js.map",
+    "453.400c5b0c.chunk.js.map": "/static/js/453.400c5b0c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83e72169.css",
-    "static/js/main.b0f09275.js"
+    "static/css/main.b1f4f297.css",
+    "static/js/main.c0c6af29.js"
   ]
 }

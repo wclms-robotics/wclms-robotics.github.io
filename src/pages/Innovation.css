@@ -1,0 +1,78 @@
+.Innovation {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: #333;
+}
+
+.innovation-header {
+  position: relative;
+  width: 100%;
+  min-height: 28vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("../media/innovationbg.jpg") no-repeat center center/cover;
+  color: #fff;
+  padding: 2.5rem 1rem;
+}
+
+.innovation-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.innovation-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  max-width: 60ch;
+  text-align: center;
+}
+
+.innovation-main {
+  overflow-x: hidden;
+}
+
+.innovation-main img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .innovation-main .mission-span {
+    grid-row: 1 / span 2;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Make grid rows share available height so spanning items fill the column */
+  .innovation-main .grid {
+    grid-auto-rows: 1fr;
+  }
+
+  /* Ensure mission-span is a column flex container so title stays on top */
+  .innovation-main .mission-span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* sizing for the image added to the mission card */
+.innovation-main .mission-image {
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* small image helper used in cards */
+.innovation-main img.w-40 {
+  width: 10rem;
+}
+
+.innovation-main .text-center p {
+  margin: 0 auto;
+}
