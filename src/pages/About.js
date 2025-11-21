@@ -72,7 +72,15 @@ function About() {
     'ryand.jpeg': {
       title: 'Ryan D — Junior',
       paragraph: 'Ryan is a big team player, and has triple lineage at WCMS, making him experienced, even at the first year.'
-    }
+    },
+    'ryane.jpeg': {
+      title: 'Ryan E — Senior',
+      paragraph: 'Ryan does a little bit of everything, and is always ready to hop on a task.'
+    },
+    'william.jpeg': {
+      title: 'William — Senior',
+      paragraph: 'William works hand in hand with Ryan E. to work on the robot as efficient as possible.'
+     }
   };
 
   const Carousel = ({ items = [], currentIdx = 0, onIndexChange = () => {} }) => {
