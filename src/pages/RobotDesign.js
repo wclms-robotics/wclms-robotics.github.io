@@ -39,6 +39,7 @@ function RobotDesign() {
             <img
               src={planningImg}
               alt="Robot planning and strategy"
+              loading="lazy"
               className="w-full h-auto object-contain rounded-lg mb-4 mx-auto"
             />
             <br></br>
@@ -57,6 +58,7 @@ function RobotDesign() {
             <img
               src={codeImg}
               alt="Spike Coding interface"
+              loading="lazy"
               className="w-full h-auto object-contain rounded-lg mb-4 mx-auto"
             />
             <br></br>
@@ -73,6 +75,7 @@ function RobotDesign() {
                 <img
                   src={robotPartsImg}
                   alt="Attachments for the Robot"
+                  loading="lazy"
                   className="h-auto object-contain rounded-lg mb-2 mx-auto"
                 />
                 <p className="text-gray-600 text-sm">Attachments for the Robot</p>
@@ -81,6 +84,7 @@ function RobotDesign() {
                 <img
                   src={spacersImg}
                   alt="Spacers to Assist in Setup"
+                  loading="lazy"
                   className="h-auto object-contain rounded-lg mb-2 mx-auto"
                 />
                 <p className="text-gray-600 text-sm">Spacers to Assist in Setup</p>

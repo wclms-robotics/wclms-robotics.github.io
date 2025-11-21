@@ -90,7 +90,7 @@ function About() {
     return (
       <div className="w-full max-w-4xl relative">
         <div className="carousel-image-container">
-          <img src={current.src} alt={current.name} className="w-full max-h-96 object-contain rounded-lg shadow" />
+          <img src={current.src} alt={current.name} loading="lazy" className="w-full max-h-96 object-contain rounded-lg shadow" />
         </div>
 
         <button

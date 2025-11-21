@@ -68,6 +68,10 @@
   display: block;
 }
 
+.parabold p {
+  font-weight: 600;
+}
+
 /* small image helper used in cards */
 .innovation-main img.w-40 {
   width: 10rem;

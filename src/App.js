@@ -51,6 +51,7 @@ function App() {
           <img
             src={imgs[idx]}
             alt={`carousel-${idx}`}
+            loading="lazy"
             className="w-full h-64 sm:h-80 object-cover rounded-lg shadow" />
 
           <button

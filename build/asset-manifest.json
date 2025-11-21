@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1f4f297.css",
-    "main.js": "/static/js/main.c0c6af29.js",
+    "main.css": "/static/css/main.831c4ea7.css",
+    "main.js": "/static/js/main.b732e4cd.js",
     "static/js/453.400c5b0c.chunk.js": "/static/js/453.400c5b0c.chunk.js",
     "static/media/IMG_4060.png": "/static/media/IMG_4060.b846e136a50e640c06ac.png",
     "static/media/IMG_4058.png": "/static/media/IMG_4058.aa8d0e6b52e09b4dc715.png",
@@ -37,18 +37,19 @@
     "static/media/aboutbg.jpg": "/static/media/aboutbg.089c51d2fabb37e68bc4.jpg",
     "static/media/innovationbg.jpg": "/static/media/innovationbg.1efadbb346082f28e6cf.jpg",
     "static/media/code.png": "/static/media/code.7a461b58c1fc51a2e44c.png",
+    "static/media/tarp.png": "/static/media/tarp.2fc914af9319d96c0d3e.png",
     "static/media/homebanner.jpg": "/static/media/homebanner.bf3cb7edcfa5bde3c549.jpg",
     "static/media/innovationproject.png": "/static/media/innovationproject.01195ed524004652b726.png",
     "static/media/spacers.png": "/static/media/spacers.d8b8cb3214530deb0718.png",
     "static/media/planning.png": "/static/media/planning.a3f151a0337b2c6c9d10.png",
     "static/media/robotparts.png": "/static/media/robotparts.312a370e69ffbbbe9406.png",
     "index.html": "/index.html",
-    "main.b1f4f297.css.map": "/static/css/main.b1f4f297.css.map",
-    "main.c0c6af29.js.map": "/static/js/main.c0c6af29.js.map",
+    "main.831c4ea7.css.map": "/static/css/main.831c4ea7.css.map",
+    "main.b732e4cd.js.map": "/static/js/main.b732e4cd.js.map",
     "453.400c5b0c.chunk.js.map": "/static/js/453.400c5b0c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1f4f297.css",
-    "static/js/main.c0c6af29.js"
+    "static/css/main.831c4ea7.css",
+    "static/js/main.b732e4cd.js"
   ]
 }
